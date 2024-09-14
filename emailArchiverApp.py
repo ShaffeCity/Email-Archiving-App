@@ -1,13 +1,14 @@
-import sys
-import imaplib
 import email
-from email.header import decode_header
-import datetime
+import imaplib
 import json
-from PyQt5.QtWidgets import (QApplication, QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout, QHBoxLayout, QComboBox, QDateEdit,
-                             QTextEdit, QMessageBox, QInputDialog, QListWidget)
-from PyQt5.QtGui import QFont, QColor, QPalette
+import sys
+from email.header import decode_header
+
 from PyQt5.QtCore import Qt, QDate, QThread, pyqtSignal
+from PyQt5.QtGui import QFont, QColor, QPalette
+from PyQt5.QtWidgets import (QApplication, QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout, QHBoxLayout, QComboBox,
+                             QDateEdit,
+                             QTextEdit, QMessageBox, QInputDialog, QListWidget)
 
 CONFIG_FILE = "configurations.json"
 
